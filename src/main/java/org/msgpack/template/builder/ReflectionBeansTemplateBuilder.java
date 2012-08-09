@@ -17,10 +17,6 @@
 //
 package org.msgpack.template.builder;
 
-import java.beans.BeanInfo;
-import java.beans.IntrospectionException;
-import java.beans.Introspector;
-import java.beans.PropertyDescriptor;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -38,6 +34,11 @@ import org.msgpack.template.FieldOption;
 import org.msgpack.template.Template;
 import org.msgpack.template.TemplateRegistry;
 import org.msgpack.unpacker.Unpacker;
+
+import custom.beans.BeanInfo;
+import custom.beans.IntrospectionException;
+import custom.beans.Introspector;
+import custom.beans.PropertyDescriptor;
 
 /**
  * Class for building java reflection template builder for java beans class.
